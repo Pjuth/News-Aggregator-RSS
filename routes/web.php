@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+//Route::get('/', 'FeedController@index');
+
+Route::get('/{any}', function () {
+    return view('vueapp');
+})->where('any', '.*');
