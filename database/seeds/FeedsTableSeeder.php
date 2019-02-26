@@ -21,7 +21,6 @@ class FeedsTableSeeder extends Seeder
             ['delfi', 'https://www.delfi.lt/rss/feeds/lithuania.xml', 'Lietuva'],
             ['delfi', 'https://www.delfi.lt/rss/feeds/crime.xml', 'Kriminalai'],
             ['delfi', 'https://www.delfi.lt/rss/feeds/world.xml', 'Užsienis'],
-            ['delfi', 'https://www.delfi.lt/sveikata/rss/', 'Sveikata'],
 
         ];
 
