@@ -43,15 +43,21 @@ Run the database migrations and seeds (**Set the database connection in .env bef
 Start the local development server
 
     php artisan serve
+    
+Download/update feeds using artisan command
+    
+    php artisan feeds:update
+    
+Or using CRON Job.
 
 You can now access the server at http://localhost:8000
 
 ## CRON Job
 
-Add an Cron job which executes Laravel scheduler every minute. Go to your terminal, ssh into your server, cd into your project and run this command to open the server Crontab file:
+Add an Cron job which executes Laravel scheduler every minute. Go to your terminal, ssh into your server, cd into your project and run this command to open the server Crontab file
 
     crontab -e
     
-Paste the code below into the file, save and then exit.
+Paste the code below into the file, save and then exit
 
     * * * * * php /path/to/artisan schedule:run >> /dev/null 2>&1
